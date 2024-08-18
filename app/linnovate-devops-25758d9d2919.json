@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "linnovate-devops",
+  "private_key_id": "25758d9d29190845bc4dd6f2cba174aa57dfe188",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCe6FD2KIt6p4LG\n21kADSkSp+fiCcTs95Btb4iySfjCDvFx8vyGilHEtulNDLG4/cU3d7Ih2ZHAucfl\n/Z02Mq2nTbwCMPP1GMvuXrvSjj7udc48T6lJDH9lUdocQTKfXIhuHuNWRcq+29rb\n6p/mCJlXpgyLvXBJIShw277z29S/2P0Mg86wnJIpSjDtAt36d3sYkgyRcGqkIWAY\n3rmNeNjt3us1J/yoqmwXLmoMJVpXuS+/61gz+8X5GzWT5l/ih9E6SzG+i9glOzZv\nKc/hyJJ+gltr024CDYHnCuIxqHTI7Lr19PcdeqClLuVJ3x69Lot6+dtyKQcWZkSi\nRKisymPjAgMBAAECggEAIFlf3fS8DECcnVnbAOks8tjOmlPtzGXLd5PMiqsHYo4D\nNfTG1qbC5Z5s2Rwb8/JpWxTZZQ2zH75SRO4/umBPvK7U9sc7aqpdHY4Yg1Ek24uM\n6/c1maLbLmee1MCrCwkd1vkfw5jaoMcGA138pioa+V5a0HnEqYaAApWhhmg6o8E4\n66oIoUVVDm4yavpYcSn4JXRqye8s2n3fwtctotJ1RD5H1AyF/DEBJsHU0AqqH0uA\nuTyrSL+DYSfwJQmZkV22z1EWX53NWv+U4DLhUcF65DYtSnUYnVKiOOrwLikOF0aJ\n5LBzSfaiLgfQ1PvJfnbeDs0gXbtyFAYQGAAbmdY59QKBgQDUaeJkVqY+CSgpOBWW\n/+zMlY5q3KGoptcXMuyghhE/uN3Tuo4xyj1DlAcx/JMt3YRgWXvTXwJMYAyz1RuU\nQGr0TkLibsuGvAaBVoEgobjCY/j6JMQaIXpgZ2nDEGwMO6zT1/LAO52IGE6Htj2w\nd6W1Y1p5799zh0SK+Xt+Nbz11wKBgQC/g7932qYgA8l6sF/LVFW3Vv7A0DMWbJFr\nmwuoLs5SL/7HNUk63dTuajV0kFWLmpf5g4R410MFZnN/lkpqGZya+K3y3kTBfkuD\n2plmmdZ8NX6sQz5bTf2urNL/47RPmcbtYLg3H7COppuiyG8yQ+CczXJmgpuNXxnR\nQnhfL5Ho1QKBgQCejXbevMsUbVNcCTAcaWZBg7Ut0QieUgMlnu6AF/LSJNT4ET3I\nrpQyWFFSn5zg1IPWQ5UpPrcBeYShy4XtkHQFblGAoYEsTjdw3bg/OlgmSed0GHOE\nqc6mHSsV3rE4JGcqLfxWP2mkR7h+lqrPiU/Y6JOFh2a83pBsSDNFDynAOwKBgQCM\n4ktwzP0WYhLOWX8u4axoweuIReC/J0DW6ujpYP1QQpRnUVC8qEGi3ajTRfZYS3Jv\nEAvcpWZdS5+9hP7bDFpDOpskJdRojxLYPXBJpPO+zc+Qw6rUmgv7epGBwq17PUG0\nkEkT7BEC75dgaZg7XumWECCPPpdVqVchtIc+Zo0svQKBgEReehe/tutg0CQvVfUv\nKEctvcpvNG6DwLEI0N2wOaiAuDGm00frCYv0GcxeyUrqB1cNXbDEvhOBkldMPAyy\ns3Qn1WTbzRqiwG2U83AVZlz+PGGoBQwdtKRxhRoh9qY2m6gakhpfiQGkckuSbDup\n3K2xrfY1BTV7oetzJH37dqjs\n-----END PRIVATE KEY-----\n",
+  "client_email": "elbuploadsa@linnovate-devops.iam.gserviceaccount.com",
+  "client_id": "117427419277866473328",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/elbuploadsa%40linnovate-devops.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images</title>
+</head>
+<body>
+    <h1>Uploaded images</h1>
+    
+    {% for blob in blobs %}
+    <div>
+        <img src="{{ url_for('serve_image', filename=blob.name) }}" alt="{{ blob.name }}" width="200">
+        <p>{{ blob.name }}</p>
+        <a href="{{ url_for('delete', filename=blob.name) }}">מחק</a>
+    </div>
+    {% endfor %}
+    
+    <a href="{{ url_for('upload') }}">העלה תמונה</a>
+</body>
+</html>
+
