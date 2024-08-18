@@ -1,0 +1,85 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+  namespace: pakar
+  labels:
+    app: my-application
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-application
+  template:
+    metadata:
+      labels:
+        app: my-application
+    spec:
+      containers:
+        - name: my-application
+          image: <your-application-image>
+          ports:
+            - containerPort: 5000  # Assuming your app runs on port 5000
+          env:
+            - name: KEYCLOAK_URL
+              value: "http://keycloak-svc.pakar.svc.cluster.local:8080/auth"
+            - name: KEYCLOAK_REALM
+              value: "<your-realm-name>"
+            - name: KEYCLOAK_CLIENT_ID
+              value: "<your-client-id>"
+            - name: KEYCLOAK_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: keycloak-client-secret
+                  key: client-secret
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+      volumes: []
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-application-svc
+  namespace: pakar
+  labels:
+    app: my-application
+spec:
+  ports:
+    - port: 5000
+      targetPort: 5000
+      protocol: TCP
+  selector:
+    app: my-application
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-ingress
+  namespace: pakar
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-dev
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/proxy-body-size: 100m
+  labels:
+    app: my-application
+spec:
+  rules:
+    - host: app.gke-dev.linnovate.net  # Change this to your app's domain
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-application-svc
+                port:
+                  number: 5000
+  tls:
+    - hosts:
+        - app.gke-dev.linnovate.net
+      secretName: app-secret-tls
