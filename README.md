@@ -8,8 +8,10 @@ The main parts for this are:
 
 <a id="NGX"></a>
 
-* **[NGINX](https://nginx.org/en/) Front end** that holds a [static website](https://en.wikipedia.org/wiki/Static_web_page) for login that is the gate to the application.   (Another option can be a secure login like [Keycloak](https://www.keycloak.org/))
-* **[MySQL](https://www.mysql.com/) Databse** to hold the users login credentials.  
+* ****    
+* **[Keycloak](https://www.keycloak.org/) Front End** as a SSO gate  (Another option can be [NGINX](https://nginx.org/en/) Front end that holds a [static website](https://en.wikipedia.org/wiki/Static_web_page) for login that is the gate to the application.).
+* **[PostgreSQL](https://www.postgresql.org/) DB** for the Keycloak SSO.
+* **[MySQL](https://www.mysql.com/) Databse** to hold the users login credentials (If using NGINX).  
 * **The Application** based on [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)).  
 * **[GCP](https://console.cloud.google.com/) [Bucket](https://cloud.google.com/storage/docs/creating-buckets)** to hold the images.  
 * **[GKE](https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview)** is the platform that the application, as a whole, would run in.  
